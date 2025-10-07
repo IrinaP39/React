@@ -1,0 +1,89 @@
+.contacts_section {
+  display: flex;
+  flex-direction: row;
+  margin-left: 250px;
+  margin-bottom: 646px;
+}
+form {
+  max-width: 767px;
+}
+li {
+  padding: 6.5px;
+  list-style: disc;
+}
+.contacts,
+.Email,
+.Name,
+.Msg {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+}
+.contacts_title {
+  font-size: 36px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 166px;
+  margin-top: 50px;
+}
+
+.input_form {
+  display: flex;
+  gap: 39px;
+  margin-top: 67px;
+  margin-bottom: 39px;
+}
+
+.Email,
+.Name {
+  width: 364px;
+  height: 66px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(250, 250, 250, 1);
+  padding: 25px 0px 26px 21px;
+}
+.Msg {
+  width: 767px;
+  height: 116px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(250, 250, 250, 1);
+  padding: 28px 0px 73px 21px;
+}
+.contacts_btn {
+  width: 131px;
+  height: 53px;
+  background-color: rgba(9, 13, 26, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  border-radius: 10px;
+  margin-top: 31px;
+  float: right;
+}
+.container_find_us {
+  margin-top: 370px;
+  margin-left: 79px;
+  width: 458px;
+  height: 221px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(250, 250, 250, 1);
+}
+h3 {
+  padding-top: 18px;
+  margin-bottom: 39px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+.links {
+  display: flex;
+  column-gap: 50px;
+}
+.contacts_icon {
+  width: 76px;
+  height: 76px;
+}

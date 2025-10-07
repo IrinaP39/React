@@ -1,0 +1,508 @@
+.mainContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.heroSection {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heroContent {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 80%;
+}
+
+.heroTitle {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+.categoriesSection, .salesSection {
+    padding: 0 32px;
+    margin-bottom: 40px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categoriesTitle, .salesTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #282828;
+}
+
+.categoriesGrid, .salesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.categoryCard {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.categoryCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.categoryImage {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.categoryCard:hover .categoryImage {
+    transform: scale(1.05);
+}
+
+.categoryTitle {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 12px;
+    color: #282828;
+    transition: color 0.3s ease;
+}
+
+.categoryCard:hover .categoryTitle {
+    color: #2451C6;
+}
+
+.discountSection {
+    background: linear-gradient(261.47deg, #2451C6 32.63%, #0D50FF 98.96%);
+    width: 100%;
+    max-width: 1360px;
+    height: 486px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.discountContent {
+    display: flex;
+    width: 100%;
+}
+
+.discountImageContainer {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.discountImage {
+    max-height: 100%;
+    object-fit: cover;
+    transform: translateY(-30px);
+}
+
+.discountForm {
+    flex: 1;
+    margin: 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1;
+}
+
+.discountTitle {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 32px 32px 24px 32px;
+}
+
+.formInput {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    padding: 0 16px;
+    color: white;
+    font-size: 20px;
+}
+
+.formInput::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.formButton {
+    width: 100%;
+    height: 50px;
+    background: white;
+    border: none;
+    border-radius: 6px;
+    color: rgba(40, 40, 40, 1);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.formButton:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.saleItem {
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.saleItem:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.saleImage {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.saleItem:hover .saleImage {
+    transform: scale(1.05);
+}
+
+.saleContent {
+    padding: 16px;
+}
+
+.saleTitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #282828;
+    margin-bottom: 8px;
+}
+
+.priceContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.discountPrice {
+    font-size: 20px;
+    font-weight: 600;
+    color: #282828;
+}
+
+.regularPrice {
+    font-size: 16px;
+    color: #8B8B8B;
+    text-decoration: line-through;
+}
+
+.discountBadge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(13, 80, 255, 1);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Анимация появления для карточек в сетке */
+.categoriesGrid > a:nth-child(1) .categoryCard { animation-delay: 0.1s; }
+.categoriesGrid > a:nth-child(2) .categoryCard { animation-delay: 0.2s; }
+.categoriesGrid > a:nth-child(3) .categoryCard { animation-delay: 0.3s; }
+.categoriesGrid > a:nth-child(4) .categoryCard { animation-delay: 0.4s; }
+
+.salesGrid > a:nth-child(1) .saleItem { animation-delay: 0.1s; }
+.salesGrid > a:nth-child(2) .saleItem { animation-delay: 0.2s; }
+.salesGrid > a:nth-child(3) .saleItem { animation-delay: 0.3s; }
+.salesGrid > a:nth-child(4) .saleItem { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1440px) {
+    .heroSection {
+        height: 500px;
+        margin-bottom: 60px;
+    }
+
+    .heroTitle {
+        font-size: 56px;
+        margin-bottom: 32px;
+    }
+
+    .discountSection {
+        width: calc(100% - 64px);
+        height: 450px;
+        margin: 32px auto;
+    }
+
+    .discountTitle {
+        font-size: 56px;
+        padding: 28px 28px 20px 28px;
+    }
+
+    .categoriesSection, .salesSection {
+        padding: 0 32px;
+    }
+
+    .categoriesTitle, .salesTitle {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .categoriesGrid, .salesGrid {
+        gap: 20px;
+    }
+
+    .categoryImage, .saleImage {
+        height: 260px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .heroSection {
+        height: 400px;
+        margin-bottom: 50px;
+    }
+
+    .heroTitle {
+        font-size: 48px;
+        margin-bottom: 28px;
+        max-width: 600px;
+    }
+
+    .discountSection {
+        height: 400px;
+    }
+
+    .discountTitle {
+        font-size: 48px;
+        padding: 24px 24px 16px 24px;
+    }
+
+    .discountForm {
+        margin: 24px 24px;
+    }
+
+    .formInput, .formButton {
+        height: 45px;
+    }
+
+    .categoriesGrid, .salesGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .categoriesTitle, .salesTitle {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .categoryImage, .saleImage {
+        height: 240px;
+    }
+
+    .saleTitle {
+        font-size: 15px;
+    }
+
+    .discountPrice {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroSection {
+        height: 350px;
+        margin-bottom: 40px;
+    }
+
+    .heroContent {
+        left: 24px;
+    }
+
+    .heroTitle {
+        font-size: 36px;
+        margin-bottom: 24px;
+        max-width: 450px;
+    }
+
+    .discountSection {
+        width: calc(100% - 32px);
+        height: auto;
+        min-height: 500px;
+    }
+
+    .discountTitle {
+        font-size: 36px;
+        padding: 24px 20px 16px 20px;
+    }
+
+    .discountContent {
+        flex-direction: column-reverse;
+    }
+
+    .discountForm {
+        margin: 20px 20px;
+    }
+
+    .discountImageContainer {
+        height: 200px;
+    }
+
+    .discountImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translateY(0);
+    }
+
+    .categoriesSection, .salesSection {
+        padding: 0 16px;
+        margin-bottom: 32px;
+    }
+
+    .categoriesGrid, .salesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .categoriesTitle, .salesTitle {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .categoryImage, .saleImage {
+        height: 220px;
+    }
+
+    .categoryTitle {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroSection {
+        height: 300px;
+        margin-bottom: 32px;
+    }
+
+    .heroContent {
+        left: 16px;
+    }
+
+    .heroTitle {
+        font-size: 28px;
+        margin-bottom: 20px;
+        max-width: 280px;
+    }
+
+    .discountSection {
+        width: calc(100% - 24px);
+        min-height: 450px;
+    }
+
+    .discountTitle {
+        font-size: 28px;
+        padding: 20px 16px 12px 16px;
+    }
+
+    .discountForm {
+        margin: 16px;
+        gap: 12px;
+    }
+
+    .formInput, .formButton {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .discountImageContainer {
+        height: 150px;
+    }
+
+    .categoriesSection, .salesSection {
+        padding: 0 12px;
+        margin-bottom: 24px;
+    }
+
+    .categoriesGrid, .salesGrid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .categoriesTitle, .salesTitle {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .categoryImage, .saleImage {
+        height: 200px;
+    }
+
+    .saleContent {
+        padding: 12px;
+    }
+
+    .saleTitle {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .discountPrice {
+        font-size: 16px;
+    }
+
+    .regularPrice {
+        font-size: 14px;
+    }
+}

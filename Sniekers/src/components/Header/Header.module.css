@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  background-color: #333331;
+  justify-content: space-between;
+  padding: 43px 250px;
+  align-items: center;
+}
+h1 {
+  color: white;
+  font-weight: 900;
+}
+
+.nav {
+  display: flex;
+  gap: 64px;
+  font-size: 15px;
+  font-weight: 600;
+}

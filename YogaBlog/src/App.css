@@ -1,0 +1,38 @@
+body {
+  background-image: url(./assets/images/chakra.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+
+.home_content,
+.article_content {
+  font-size: 16px;
+}
+.artirle_list_title,
+.article_title {
+  font-size: 25px;
+}
+.nav_Btn {
+  font-size: 16px;
+  background-color: rgb(235, 73, 167);
+  border: 1px solid rgb(185, 80, 142);
+  border-radius: 8px;
+  padding: 7px 7px;
+}
+.Link,
+.nav_lists,
+.nav_list {
+  text-decoration-color: rgb(235, 73, 167);
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color: rgb(235, 73, 167);
+}

@@ -1,0 +1,17 @@
+.news {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0 72px 0;
+}
+
+h2{
+margin-left: 72px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 42px;
+  margin: 45px 250px 172px 250px;
+}

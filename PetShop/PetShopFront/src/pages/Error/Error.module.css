@@ -1,0 +1,30 @@
+.error_page_messages,
+.error_page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.go_home_button {
+  background-color: rgba(13, 80, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  padding: 16px 56px;
+  border-radius: 5px;
+}
+.error_messages{
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: rgba(40, 40, 40, 1);
+}
+.error_messages_info {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: rgba(139, 139, 139, 1);
+}

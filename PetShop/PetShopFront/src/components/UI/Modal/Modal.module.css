@@ -1,0 +1,132 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    animation: slideIn 0.3s ease-out;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    background: #E3F2FD;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #2979FF;
+    margin-bottom: 24px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgba(139, 139, 139, 1);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: color 0.2s;
+}
+
+.closeButton:hover {
+    color: #282828;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #282828;
+    margin: 0 0 24px 0;
+}
+
+.message {
+    font-size: 16px;
+    color: rgba(40, 40, 40, 1);
+    line-height: 1.6;
+    margin: 0;
+    max-width: 420px;
+}
+
+.confirmButton {
+    background: #2979FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    max-width: 200px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.confirmButton:hover {
+    background: #1565C0;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal {
+        margin: 0 16px;
+        padding: 24px;
+    }
+
+    .title {
+        font-size: 32px;
+        margin: 0 0 16px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+} 
