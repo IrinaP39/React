@@ -1,5 +1,5 @@
 import React from "react";
-import sp_chat from "../../assets/images/Sp_chat.svg";
+import sp_chat from "../../assets/images/Sp_Chat.svg";
 import FB from "../../assets/images/FB_color.svg";
 import X from "../../assets/images/x_icon.jpeg.svg";
 import cls from "./Contacts.module.css";
