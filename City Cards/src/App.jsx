@@ -3,7 +3,7 @@ import CitySelector from "./components/CitySelector";
 import CityCard from "./components/CityCard";
 import { useState } from "react";
 import { citiesData } from "./config/CitySelector";
-import MathQuiz from "./components/MathQuiz";
+
 
 function App() {
   const [selectedCityCard, setSelectedCityCard] = useState(null);
