@@ -22,10 +22,7 @@ function App() {
         />
         <CityCard city={selectedCityCard} />
       </div>
-      <div>
-        <MathQuiz />
-      </div>
-    </>
+          </>
   );
 }
 
